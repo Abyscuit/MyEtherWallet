@@ -4,12 +4,12 @@ const fs = require('fs');
 
 const fetchLists = async () => {
   const contractList = await fetch(
-    'https://api.github.com/repos/MyEtherWallet/ethereum-lists/contents/dist/contracts'
+    'https://api.github.com/repos/Abyscuit/ethereum-lists/contents/dist/contracts'
   )
     .then(res => res.json())
     .catch(console.error);
   const tokensList = await fetch(
-    'https://api.github.com/repos/MyEtherWallet/ethereum-lists/contents/dist/tokens'
+    'https://api.github.com/repos/Abyscuit/ethereum-lists/contents/dist/tokens'
   )
     .then(res => res.json())
     .catch(console.error);
