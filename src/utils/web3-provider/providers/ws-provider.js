@@ -16,14 +16,17 @@ import {
   netVersion
 } from '../methods';
 const MAX_RETRIES = 10;
+let id = 1;
 class WSProvider {
   constructor(host, options) {
+    host = host.replace('null', '');
     this.wsProvider = new Web3WSProvider(host, options);
     this.oWSProvider = new Web3WSProvider(host, options);
     this.lastMessage = new Date().getTime();
     this.connectionRetries = 0;
     delete this.wsProvider['send'];
     this.wsProvider.send = (payload, callback) => {
+      if (host === 'wss://eth.bd.evmos.org:8546') payload.id = id++;
       this.lastMessage = new Date().getTime();
       if (
         this.wsProvider.connection.readyState ===

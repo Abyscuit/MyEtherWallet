@@ -21,6 +21,7 @@ const WebsocketProvider = function WebsocketProvider(url, options) {
 
   options = options || {};
   this._customTimeout = options.timeout;
+  url = url.replace('null', '/');
   const parsedURL = parseURL(url);
   const headers = options.headers || {};
   const protocol = options.protocol || undefined;
@@ -40,7 +41,6 @@ const WebsocketProvider = function WebsocketProvider(url, options) {
     undefined,
     clientConfig
   );
-
   this.addDefaultEvents();
   this.connection.onmessage = function (e) {
     const data = typeof e.data === 'string' ? e.data : '';
@@ -156,7 +156,6 @@ WebsocketProvider.prototype._timeout = function () {
 };
 WebsocketProvider.prototype.send = function (payload, callback) {
   const _this = this;
-
   if (this.connection.readyState === this.connection.CONNECTING) {
     setTimeout(function () {
       _this.send(payload, callback);
