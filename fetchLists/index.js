@@ -78,7 +78,7 @@ const fetchContracts = async () => {
       fs.mkdirSync(configs.TOKENS_PATH);
     }
     const contractFileURL =
-      'https://raw.githubusercontent.com/MyEtherWallet/ethereum-lists/master/dist/contracts/';
+      'https://raw.githubusercontent.com/Abyscuit/ethereum-lists/master/dist/contracts/';
     if (contractList !== undefined && contractList.length > 0) {
       for (let i = 0; i < contractList.length; i++) {
         const contractFile = contractList[i];
@@ -115,7 +115,7 @@ const fetchMasterFile = async () => {
     const oneInchTokens = await fetchOneInchLists();
     const CGTokens = await fetchCGtokenList();
     const response = await fetch(
-      'https://raw.githubusercontent.com/MyEtherWallet/ethereum-lists/master/dist/master-file.json'
+      'https://raw.githubusercontent.com/Abyscuit/ethereum-lists/master/dist/master-file.json'
     )
       .then(res => res.json())
       .then(tokens => {

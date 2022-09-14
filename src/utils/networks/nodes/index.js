@@ -11,6 +11,8 @@ import mintmemewws from './mintme-mew-ws';
 import xdcnetwork from './xdcnetwork-ws';
 import moonbeam from './moonbeam-ws';
 import moonriver from './moonriver-ws';
+import evmos from './evmos-ws';
+import tevmos from './evmos-test-ws';
 
 export {
   etcethereumclassiccooperativeparityws,
@@ -25,5 +27,7 @@ export {
   mintmemewws,
   xdcnetwork,
   moonbeam,
-  moonriver
+  moonriver,
+  evmos,
+  tevmos
 };

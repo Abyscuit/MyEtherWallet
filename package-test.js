@@ -58,6 +58,8 @@ const EXCEPTIONS = [
   'vue-template-compiler', // no fix
   'package-json', // switched to es
   'chromedriver',
+  '@ethereumjs/common',
+  '@ethereumjs/tx',
   'uuid'
 ];
 const CUSTOM_DIST = {
