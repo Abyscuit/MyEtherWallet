@@ -1,4 +1,5 @@
 import evmos from '@/assets/images/networks/evmos.svg';
+import tokens from '@/_generated/tokens/tokens-evmos.json';
 
 export default {
   name: 'EVMOS',
@@ -8,7 +9,7 @@ export default {
   blockExplorerTX: 'https://evm.evmos.org/tx/[[txHash]]',
   blockExplorerAddr: 'https://evm.evmos.org/address/[[address]]',
   chainID: 9001,
-  tokens: [],
+  tokens: tokens,
   contracts: [],
   icon: evmos,
   currencyName: 'EVMOS',
