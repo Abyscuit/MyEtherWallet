@@ -21,7 +21,7 @@ const WebsocketProvider = function WebsocketProvider(url, options) {
 
   options = options || {};
   this._customTimeout = options.timeout;
-  url = url.replace('null', '/');
+  url = url.replace('null', '');
   const parsedURL = parseURL(url);
   const headers = options.headers || {};
   const protocol = options.protocol || undefined;

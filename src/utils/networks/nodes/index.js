@@ -12,6 +12,7 @@ import xdcnetwork from './xdcnetwork-ws';
 import moonbeam from './moonbeam-ws';
 import moonriver from './moonriver-ws';
 import evmos from './evmos-ws';
+import tevmos from './evmos-test-ws';
 
 export {
   etcethereumclassiccooperativeparityws,
@@ -27,5 +28,6 @@ export {
   xdcnetwork,
   moonbeam,
   moonriver,
-  evmos
+  evmos,
+  tevmos
 };

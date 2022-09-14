@@ -37,6 +37,7 @@ module.exports = [
   'wss://wss.api.moonriver.moonbeam.network:443',
   'wss://wss.api.moonbeam.network:443',
   'wss://eth.bd.evmos.org:8546',
+  'wss://eth.bd.evmos.dev:8546',
   // intercom stuff
   'api-iam.intercom.io:443',
   'https://api.zilliqa.com:443',

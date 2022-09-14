@@ -12,6 +12,7 @@ import XDC from './XDC';
 import MOONBEAM from './MOONBEAM';
 import MOONRIVER from './MOONRIVER';
 import EVMOS from './EVMOS';
+import TEVMOS from './TEVMOS';
 
 export {
   ETH,
@@ -27,5 +28,6 @@ export {
   XDC,
   MOONBEAM,
   MOONRIVER,
-  EVMOS
+  EVMOS,
+  TEVMOS
 };
